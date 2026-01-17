@@ -140,13 +140,23 @@ def index():
         </script>
         <footer style="
         text-align: center;
-        padding: 15px;
-        margin-top: 20px;
+        padding: 18px;
+        background: #f0f2f5;
+        border-top: 1px solid #ddd;
         font-size: 13px;
-        color: #666;
+        color: #555;
         ">
-    <label>© Surendra Koththigoda</label>
-  </footer>
+        <label>
+            © <span id="year"></span> Surendra Koththigoda · Iris Classification ML Model
+            &nbsp;|&nbsp;
+            <a href="https://www.linkedin.com/in/surendrakoththigoda/" target="_blank" style="color:#2c7be5; text-decoration:none;">LinkedIn</a>
+            &nbsp;|&nbsp;
+            <a href="https://github.com/surendrathilakasiri/" target="_blank" style="color:#2c7be5; text-decoration:none;">GitHub</a>
+        </label>
+        </footer>
+        <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
       </body>
     </html>
     """
